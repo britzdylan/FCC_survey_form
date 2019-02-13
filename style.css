@@ -1,0 +1,115 @@
+body {
+  font-family: "Lato",sans-serif;
+  font-size: 15px;
+  background-color: #2C3E50;
+  color: #2C3E50;
+  line-height: 25px;
+}
+
+input[type=text],[type=email],[type=number] {
+  padding : 5px 0 5px 5px;
+  width: 60%;
+}
+
+h1 {
+  text-align: center;
+  color: #E74C3C;
+  font-family: "Montserrat" ,sans-serif;
+}
+
+#description {
+  text-align: center;
+  color: #3498DB;
+}
+
+#form-holder {
+  background-color : #ECF0F1;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+#description {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0 0 5% 0;
+}
+
+label{
+  text-align: right;
+}
+
+.row-tab {
+  margin: 0;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+.labels {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  margin: 0 2% 0 0;
+  padding 0;
+  vertical-align: top;
+}
+
+.inputs{
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+  margin: 0;
+  padding : 0;
+}
+
+#dropdown {
+    padding : 5px 0 5px 5px;
+    margin: 0;
+    width: 60%;
+}
+
+.submit {
+  margin: 2% 0 0 0;
+  padding: 0 60% 0 40%;
+  align-items: middle;
+}
+
+input[type=submit] {
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  drop-shadow: 0;
+  border: 1px solid #E74C3C;
+  background-color: #E74C3C;
+  color: white;
+}
+
+@media (max-width: 850px) {
+  
+.inputs{
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding : 0;
+}
+  
+.labels {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 2% 2% 2% 0;
+  padding 0;
+  vertical-align: top;
+}
+  
+.submit {
+    text-align: left;
+  padding: 0;
+    
+  }
+  
+  
+  
+}
