@@ -1,0 +1,186 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:700" rel="stylesheet"> 
+
+<div id="main-content">
+  <h1 id="title">Survey Form</h1>
+  
+  <!-- from start -->
+  <div id="form-holder">
+    <p id="description">Let us know how we can improve our services<p>
+    <form id="survey-form">
+      <!-- name start -->
+      <div class="row-tab">
+        <div class="labels">
+          <label id="name-label" for="name">*Name</label>
+        </div>
+        <div class="inputs">
+          <input id="name" placeholder="Enter your Name" required type="text">
+        </div>
+      </div>
+      <!-- name end -->
+      <!-- email start -->
+      <div class="row-tab">
+        <div class="labels">
+          <label id="email-label" for="email">*Email</label>
+        </div>
+        <div class="inputs">
+          <input id="email" type="email"  placeholder="Enter your email" required>
+        </div>
+      </div>
+      <!-- email end -->
+      <!-- numer start -->
+      <div class="row-tab">
+        <div class="labels">
+          <label id="number-label" for="number">*Age</label>
+        </div>
+        <div class="inputs">
+          <input id="number" type="number" placeholder="Enter your Age" required min="12"     max="35">
+        </div>
+      </div>
+      <!-- number end -->
+      <!-- drop down start -->
+      <div class="row-tab">
+        <div class="labels">
+          <label id="dropdown-label">Which option best describes your current role?</label>
+        </div>
+        <div class="inputs">
+         <select id="dropdown">
+          <option value="" selected>Select an option</option>
+          <option value="student">Student</option>
+          <option value="full time job">Full time job</option>
+          <option Value="full time learner">Full time learner</option>
+          <option value="prefer not to say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+       </div>
+      </div>
+      <!-- dropdown end -->
+      
+      <!--_______________________________________________________________________________-->
+      
+      <!-- radio group start -->
+      <div class="row-tab">
+        <div class="labels">
+          <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+        </div>
+        <div class="inputs">
+          <div class="radio-group">
+            <input type="radio" value="definitely" id="definitely" name="reccomend">
+            <label for="definitely">Definitely</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" value="maybe" id="maybe" name="reccomend">
+            <label for="maybe">Maybe</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" value="not-sure" id="not-sure" name="reccomend">
+           <label for="not-sure">Not Sure</label>
+          </div>  
+        </div>
+      </div>
+      <!-- radio group end  -->
+      
+      <!--______________________________________________________________________________-->
+      
+      <!-- dropdown - 2 start --> 
+      <div class="row-tab">
+        <div class="labels">
+          <label id="dropdown-label-2">What do you like most in FCC:</label>
+        </div>
+        <div class="inputs">
+          <select id="dropdown">
+            <option value="" selected>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option Value="communities">Communities</option>
+            <option value="open source">Open Source</option>
+          </select>
+        </div>
+      </div>
+      
+      <!-- drop down -2 end -->
+      
+     <!--____________________________________________________________________-->
+      <!-- checkboxes start -->
+      <div class="row-tab">
+        <div class="labels">
+          <label>Things that should be improved in the future
+            (Check all that apply):</label>
+        </div>
+        <div class="inputs">
+          <div>
+            <input type="checkbox" id="front-end" value="frontendprojects">
+            <label for="front-end">Front-end Projects</label>
+          </div>
+          <div>
+            <input type="checkbox" id="back-end" value="backendprojects">
+            <label for="back-end">Back-end Projects</label>
+          </div>
+          <div>
+            <input type="checkbox" id="data-viz" value="dataviz">
+            <label for="data-viz">Data Visualization</label>
+          </div>
+          <div>
+            <input type="checkbox" id="challenges" value="challenge">
+            <label for="challenges">Challenges</label>
+          </div>
+          <div>
+            <input type="checkbox" id="open-source" value="opensource">
+            <label for="open-source">Open source community</label>
+          </div>
+          <div>
+            <input type="checkbox" id="gitter-help" value="gitter">
+            <label for="gitter-help">Gitter Help Rooms</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Vidoes" value="video">
+            <label for="vidoes">Videos</label>
+          </div>
+          <div>
+            <input type="checkbox" id="city-meetups" value="meetups">
+            <label for="city-meetups">City Meetups</label>
+          </div>
+          <div>
+            <input type="checkbox" id="front-end" value="frontendprojects">
+            <label for=front-end>Front-end Projects</label>
+          </div>
+          <div>
+            <input type="checkbox" id="wiki" value="wikis">
+            <label for="wiki">Wiki</label>
+          </div>
+          <div>
+            <input type="checkbox" id="ad-courses" value="courses">
+            <label for="ad-courses">Additional Courses</label>
+          </div>
+         </div>
+      </div>
+      
+      
+      <!-- checkbox end -->
+      <!--_______________________________________________________-->
+      
+      <!-- comments start -->
+      <div class="row-tab">
+        <div class="labels">
+          <label> Any Comments or Suggestions?</label>
+        </div>
+        <div class="inputs">
+          <textarea id="comments" name="suggestions" placeholder="enter your comments here">    </textarea>
+        </div>
+      </div>
+      <div class="submit">
+        <input type="submit" id="submit" value="Submit" action="#" method="post">
+      </div>
+    </form>
+  </div>
+</div>
